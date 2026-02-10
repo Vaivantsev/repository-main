@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+p{
+    width: 600px; 
+    margin: 20px auto; 
+    padding: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.like {
+    
+      display: block;
+    width: fit-content; /* Ширина по содержимому */
+    margin: 20px auto; /* Автоматические отступы слева/справа центрируют */
+    padding: 12px 40px;
+
+}
+        
+.like:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 #922908, 0 2px 5px rgba(0,0,0,0.2);
+}
+        
+.like img {
+    width: 24px;
+    height: 24px;
+}
+        
+marquee{
+        font-family: "Roboto", sans-serif;
+
+}
+ .link {
+    position: relative;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    
+}
+
+        
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+        
+.link:hover {
+    color: #2980b9;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 70px;
+    flex-direction: column;
+}
+        
