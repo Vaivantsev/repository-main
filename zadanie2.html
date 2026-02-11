@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zadanie2style.css">
+<style>
+    .card {
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px 0;
+    background: #e0f7fa;
+}
+</style>
+</head>
+<body>
+    <h2 class="main">1. @import </h2>
+    <h2>2. Внутренние стили</h2>
+    <div class="card">
+        <p>Этот блок оформлен внутренними стилями</p>
+    </div>
+
+    <h2>3. Встроенные стили</h2>
+    <p style="color: white; background: green; padding: 10px;">
+        Этот текст зелёный с белым текстом — инлайн стиль
+    </p>
+
+    <h2>4. Псевдоклассы</h2>
+    <p><strong>:hover</strong> — наведи мышь на кнопку</p>
+    <button class="btn">Наведи на меня</button>
+    
+    <p><strong>:focus</strong> — кликни на поле ввода</p>
+    <input type="text" placeholder="Кликни сюда">
+
+    <h2>5. Псевдоэлементы</h2>
+    <p class="big"><strong>::first-letter</strong> — первая буква красная</p>
+
+    
+    <p><strong>::before</strong> — галочка перед элементами</p>
+    <ul>
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+    </ul>
+</body>
+</html>

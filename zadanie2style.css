@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap');
+
+.main{
+  font-family: "Playwrite CU Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: blue;
+}
+
+        
+        
+.btn:hover {
+    background: red;
+    color: white;
+}
+input:focus {
+    background: yellow;
+}
+        
+    
+
+li::before {
+    content: "✓ ";
+    color: rgb(158, 179, 158);
+}
+.big::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
