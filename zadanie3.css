@@ -1,0 +1,36 @@
+ @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 20px 0;
+ }
+
+ body {
+     font-family: "Google Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: <weight>;
+     font-style: normal;
+     font-variation-settings:
+         "GRAD" 0;
+ }
+
+ th {
+     background-color: #2b62a0;
+     color: white;
+     padding: 12px;
+     text-align: left;
+ }
+
+ td {
+     padding: 10px;
+     border-bottom: 1px solid #ddd;
+ }
+
+ tr:nth-child(even) {
+     background-color: #f2f2f2;
+ }
+
+ tr:hover {
+     background-color: #e9e9e9;
+ }
