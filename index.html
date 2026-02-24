@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Задание 9</title>
+    <style>
+        body {
+            margin: 30px;
+            background: rgb(255, 254, 254);
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .scene {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: rgb(0, 0, 0);
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .cube1 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 30px;
+            left: 80px;
+            animation: jump 2s infinite;
+        }
+
+        @keyframes jump {
+            0% {
+                bottom: 30px;
+                height: 40px;
+                width: 40px;
+                left: 80px;
+            }
+
+            30% {
+                bottom: 130px;
+                height: 38px;
+                width: 42px;
+                left: 79px;
+            }
+
+            50% {
+                bottom: 150px;
+                height: 36px;
+                width: 44px;
+                left: 78px;
+            }
+
+            70% {
+                bottom: 100px;
+                height: 38px;
+                width: 42px;
+                left: 79px;
+            }
+
+            90% {
+                bottom: 35px;
+                height: 30px;
+                width: 50px;
+                left: 75px;
+            }
+
+            100% {
+                bottom: 30px;
+                height: 40px;
+                width: 40px;
+                left: 80px;
+            }
+        }
+
+        .cube2 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            left: 80px;
+            animation: rotate 3s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cube3 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            left: 80px;
+            animation: scale 2.5s infinite ease-in-out;
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.8);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .cube4 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            animation: move 3s infinite alternate;
+        }
+
+        @keyframes move {
+            0% {
+                left: 20px;
+            }
+
+            100% {
+                left: 140px;
+            }
+        }
+
+        .cube5 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            left: 80px;
+            animation: skew 2.5s infinite alternate;
+        }
+
+        @keyframes skew {
+            0% {
+                transform: skewX(0deg);
+                background: black;
+            }
+
+            50% {
+                transform: skewX(20deg);
+                background: #666;
+            }
+
+            100% {
+                transform: skewX(-20deg);
+                background: #333;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube1"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube3"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube4"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
