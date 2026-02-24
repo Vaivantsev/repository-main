@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>анимация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+
+        margin: 30px;
+        background: white;
+    }
+
+    .scene {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        overflow: hidden;
+    }
+
+    .ground {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: gray;
+    }
+
+    .ball {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: black;
+        border-radius: 50%;
+        bottom: 40px;
+        left: 170px;
+        animation: jump 2s infinite;
+    }
+
+    .shadow {
+        position: absolute;
+        width: 70px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        bottom: 30px;
+        left: 165px;
+        animation: shadow 2s infinite;
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 40px;
+            height: 60px;
+            width: 60px;
+            left: 170px;
+        }
+
+        20% {
+            bottom: 140px;
+            height: 58px;
+            width: 62px;
+            left: 169px;
+        }
+
+        40% {
+            bottom: 200px;
+            height: 56px;
+            width: 64px;
+            left: 168px;
+        }
+
+        50% {
+            bottom: 210px;
+            height: 55px;
+            width: 65px;
+            left: 167px;
+        }
+
+        60% {
+            bottom: 200px;
+            height: 56px;
+            width: 64px;
+            left: 168px;
+        }
+
+        80% {
+            bottom: 100px;
+            height: 58px;
+            width: 62px;
+            left: 169px;
+        }
+
+        90% {
+            bottom: 45px;
+            height: 50px;
+            width: 75px;
+            left: 162px;
+        }
+
+        95% {
+            bottom: 40px;
+            height: 55px;
+            width: 68px;
+            left: 166px;
+        }
+
+        100% {
+            bottom: 40px;
+            height: 60px;
+            width: 60px;
+            left: 170px;
+        }
+    }
+
+    @keyframes shadow {
+        0% {
+            width: 70px;
+            height: 20px;
+            left: 165px;
+            opacity: 0.5;
+        }
+
+        20% {
+            width: 60px;
+            height: 16px;
+            left: 170px;
+            opacity: 0.4;
+        }
+
+        40% {
+            width: 50px;
+            height: 12px;
+            left: 175px;
+            opacity: 0.3;
+        }
+
+        50% {
+            width: 45px;
+            height: 10px;
+            left: 177px;
+            opacity: 0.2;
+        }
+
+        60% {
+            width: 50px;
+            height: 12px;
+            left: 175px;
+            opacity: 0.3;
+        }
+
+        80% {
+            width: 62px;
+            height: 18px;
+            left: 169px;
+            opacity: 0.4;
+        }
+
+        90% {
+            width: 85px;
+            height: 28px;
+            left: 157px;
+            opacity: 0.7;
+        }
+
+        95% {
+            width: 75px;
+            height: 22px;
+            left: 162px;
+            opacity: 0.6;
+        }
+
+        100% {
+            width: 70px;
+            height: 20px;
+            left: 165px;
+            opacity: 0.5;
+        }
+    }
+</style>
+
+<body>
+    <div class="numberOne">
+        <div class="scene">
+            <div class="ground"></div>
+            <div class="shadow"></div>
+            <div class="ball"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
