@@ -3,194 +3,222 @@
 
 <head>
     <meta charset="utf-8">
-    <title>анимация</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Задание 9</title>
+    <style>
+        body {
+            margin: 30px;
+            background: rgb(255, 254, 254);
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .scene {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: rgb(0, 0, 0);
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .cube1 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 30px;
+            left: 80px;
+            animation: jump 2s infinite;
+        }
+
+        @keyframes jump {
+            0% {
+                bottom: 30px;
+                height: 40px;
+                width: 40px;
+                left: 80px;
+            }
+
+            30% {
+                bottom: 130px;
+                height: 38px;
+                width: 42px;
+                left: 79px;
+            }
+
+            50% {
+                bottom: 150px;
+                height: 36px;
+                width: 44px;
+                left: 78px;
+            }
+
+            70% {
+                bottom: 100px;
+                height: 38px;
+                width: 42px;
+                left: 79px;
+            }
+
+            90% {
+                bottom: 35px;
+                height: 30px;
+                width: 50px;
+                left: 75px;
+            }
+
+            100% {
+                bottom: 30px;
+                height: 40px;
+                width: 40px;
+                left: 80px;
+            }
+        }
+
+        .cube2 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            left: 80px;
+            animation: rotate 3s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cube3 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            left: 80px;
+            animation: scale 2.5s infinite ease-in-out;
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.8);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .cube4 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            animation: move 3s infinite alternate;
+        }
+
+        @keyframes move {
+            0% {
+                left: 20px;
+            }
+
+            100% {
+                left: 140px;
+            }
+        }
+
+        .cube5 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgb(85, 63, 63);
+            bottom: 80px;
+            left: 80px;
+            animation: skew 2.5s infinite alternate;
+        }
+
+        @keyframes skew {
+            0% {
+                transform: skewX(0deg);
+                background: black;
+            }
+
+            50% {
+                transform: skewX(20deg);
+                background: #666;
+            }
+
+            100% {
+                transform: skewX(-20deg);
+                background: #333;
+            }
+        }
+    </style>
 </head>
-<style>
-    body {
-
-        margin: 30px;
-        background: white;
-    }
-
-    .scene {
-        position: relative;
-        width: 400px;
-        height: 300px;
-        border: 1px solid black;
-        overflow: hidden;
-    }
-
-    .ground {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 40px;
-        background: gray;
-    }
-
-    .ball {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        background: black;
-        border-radius: 50%;
-        bottom: 40px;
-        left: 170px;
-        animation: jump 2s infinite;
-    }
-
-    .shadow {
-        position: absolute;
-        width: 70px;
-        height: 20px;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 50%;
-        bottom: 30px;
-        left: 165px;
-        animation: shadow 2s infinite;
-    }
-
-    @keyframes jump {
-        0% {
-            bottom: 40px;
-            height: 60px;
-            width: 60px;
-            left: 170px;
-        }
-
-        20% {
-            bottom: 140px;
-            height: 58px;
-            width: 62px;
-            left: 169px;
-        }
-
-        40% {
-            bottom: 200px;
-            height: 56px;
-            width: 64px;
-            left: 168px;
-        }
-
-        50% {
-            bottom: 210px;
-            height: 55px;
-            width: 65px;
-            left: 167px;
-        }
-
-        60% {
-            bottom: 200px;
-            height: 56px;
-            width: 64px;
-            left: 168px;
-        }
-
-        80% {
-            bottom: 100px;
-            height: 58px;
-            width: 62px;
-            left: 169px;
-        }
-
-        90% {
-            bottom: 45px;
-            height: 50px;
-            width: 75px;
-            left: 162px;
-        }
-
-        95% {
-            bottom: 40px;
-            height: 55px;
-            width: 68px;
-            left: 166px;
-        }
-
-        100% {
-            bottom: 40px;
-            height: 60px;
-            width: 60px;
-            left: 170px;
-        }
-    }
-
-    @keyframes shadow {
-        0% {
-            width: 70px;
-            height: 20px;
-            left: 165px;
-            opacity: 0.5;
-        }
-
-        20% {
-            width: 60px;
-            height: 16px;
-            left: 170px;
-            opacity: 0.4;
-        }
-
-        40% {
-            width: 50px;
-            height: 12px;
-            left: 175px;
-            opacity: 0.3;
-        }
-
-        50% {
-            width: 45px;
-            height: 10px;
-            left: 177px;
-            opacity: 0.2;
-        }
-
-        60% {
-            width: 50px;
-            height: 12px;
-            left: 175px;
-            opacity: 0.3;
-        }
-
-        80% {
-            width: 62px;
-            height: 18px;
-            left: 169px;
-            opacity: 0.4;
-        }
-
-        90% {
-            width: 85px;
-            height: 28px;
-            left: 157px;
-            opacity: 0.7;
-        }
-
-        95% {
-            width: 75px;
-            height: 22px;
-            left: 162px;
-            opacity: 0.6;
-        }
-
-        100% {
-            width: 70px;
-            height: 20px;
-            left: 165px;
-            opacity: 0.5;
-        }
-    }
-</style>
 
 <body>
-    <div class="numberOne">
-        <div class="scene">
-            <div class="ground"></div>
-            <div class="shadow"></div>
-            <div class="ball"></div>
+    <div class="container">
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube1"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube3"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube4"></div>
+            </div>
+        </div>
+        <div>
+            <div class="scene">
+                <div class="ground"></div>
+                <div class="cube5"></div>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
