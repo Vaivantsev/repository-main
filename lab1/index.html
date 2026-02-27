@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1 доп</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    h1 {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+    }
+
+    p {
+        width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        line-height: 1.6;
+        text-align: justify;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .like {
+
+        display: block;
+        width: fit-content;
+        margin: 20px auto;
+        padding: 12px 40px;
+
+    }
+
+    .like:active {
+        transform: translateY(4px);
+        box-shadow: 0 0 0 #922908, 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .like img {
+        width: 24px;
+        height: 24px;
+    }
+
+    marquee {
+        font-family: "Roboto", sans-serif;
+
+    }
+
+    .link {
+        position: relative;
+        color: #3498db;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 5px 0;
+        transition: color 0.3s ease;
+
+    }
+
+
+    .link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #3498db;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+
+    .link:hover {
+        color: #2980b9;
+    }
+
+    .end {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 70px;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <h1>Всем привет, это сайт про облака</h1>
+    <p>
+        Облака — это видимые скопления мельчайших капель воды или кристаллов льда, взвешенных в атмосфере на
+        значительной высоте.
+        Их форма, высота и плотность зависят от сложных физических процессов: температуры воздуха, давления, влажности и
+        движения воздушных масс.
+    </p>
+    <marquee behavior="scroll" direction="right">
+        Ставь лайк если было интересно)
+    </marquee>
+    <div class="end">
+        <button class="like">
+            <img src="img/f0ffdcb2a66794a015e8f86841fd7073.png" alt="">
+        </button>
+        <a href="https://cosmos-online.ru/oblaka-onlajn-v-realnom-vremeni" class="link">
+            Более подробная информация
+        </a>
+    </div>
+
+</body>
+
+</html>
+
+
