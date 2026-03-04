@@ -1,0 +1,43 @@
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h2{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    text-align: center;
+}
+body{
+    
+}
+.oglavlenie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.oglavlenie img{
+    width: 787px;
+    height: 570px;
+    margin-top: 150px
+}
+.okak{
+background-color:rgba(82, 111, 165, 0.685);
+width: 691px;
+height: 340px;
+text-align: center;
+line-height: 340px;
+}
+
+
+.okak a{
+text-decoration: none;
+color: black;
+
+}
+.okak a:hover{
+    color: aqua;
+    transition: 0.3s;
+}

@@ -1,0 +1,262 @@
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.header img {
+    width: 150px;
+    height: 100px;
+    transform: scaleY(-1);
+    margin-top: 15px;
+}
+
+.container {
+    margin: 0 81px;
+    margin-bottom: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    height: 130px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 81px;
+}
+
+.header img {
+    margin-left: 81px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-top: 30px;
+    color: black;
+}
+
+.menu a:hover {
+    color: rgba(21, 21, 73, 0.521);
+    transition: 0.2s;
+}
+
+.header img:hover {
+    transform: scaleY(1);
+    transition: 2s;
+}
+
+.header img:not(:hover) {
+    transform: scaleY(-1);
+    transition: 2s;
+}
+
+.contienius h2 {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.future p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.future img {
+    width: 750px;
+    height: 550px;
+}
+
+.future {
+    display: flex;
+    gap: 100px;
+}
+
+.trenera {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trenera h2 {
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.treneraPicture {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.treneraPicture img {
+    height: 300px;
+    padding: 15px 0px;
+}
+
+.footerLogo img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer {
+    padding: 30px 90px;
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.footer p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    margin: auto;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+
+.slide {
+    width: 33.333%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+.slide-content h5 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.slide-content p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+@keyframes slide {
+
+    0%,
+    30% {
+        transform: translateX(0);
+    }
+
+    33.33%,
+    63.33% {
+        transform: translateX(-33.333%);
+    }
+
+    66.66%,
+    96.66% {
+        transform: translateX(-66.666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.slider-btn:hover {
+    opacity: 1;
+}
+
+
+
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d3def0;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: rgba(81, 81, 206, 0.8);
+}
+
+.slides:target {
+    animation: none;
+}
+
+#slide-1:target~.slider .slides {
+    transform: translateX(0);
+}
+
+#slide-2:target~.slider .slides {
+    transform: translateX(-33.333%);
+}
+
+#slide-3:target~.slider .slides {
+    transform: translateX(-66.666%);
+}
+
+.dot:hover {
+    background-color: rgba(81, 81, 206, 0.6);
+}

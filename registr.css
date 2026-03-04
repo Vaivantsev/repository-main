@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header img {
+    width: 150px;
+    height: 100px;
+    transform: scaleY(-1);
+    margin-top: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    height: 130px;
+    background-color: rgba(81, 81, 206, 0.521);
+}
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 81px;
+}
+.header img {
+    margin-left: 81px;
+}
+.menu a {
+    text-decoration: none;
+    margin-top: 30px;
+    color: black;
+}
+.menu a:hover {
+    color: rgba(21, 21, 73, 0.521);
+    transition: 0.2s;
+}
+.header img:hover {
+    transform: scaleY(1);
+    transition: 2s;
+}
+.header img:not(:hover) {
+    transform: scaleY(-1);
+    transition: 2s;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #f8faff;
+    color: #1a1a2e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    height: 130px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0;
+}
+
+.header img {
+    margin-left: 81px;
+    width: 150px;
+    height: 100px;
+    transform: scaleY(-1);
+    margin-top: 15px;
+    transition: transform 2s;
+}
+
+.header img:hover {
+    transform: scaleY(1);
+    transition: 2s;
+}
+
+.header img:not(:hover) {
+    transform: scaleY(-1);
+    transition: 2s;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 81px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: rgba(21, 21, 73, 0.521);
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1e2b5c;
+    margin: 50px auto 30px;
+    padding-left: 20px;
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+}
+p{
+    font-size:1rem;
+    font-weight: 500;
+    color: #1e2b5c;
+    margin: 50px auto 30px;
+    padding-left: 20px;
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+}
+
+
+form {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1.5px solid #d3def0;
+    border-radius: 14px;
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    background-color: #fbfdff;
+    transition: all 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(81, 81, 206, 0.8);
+    box-shadow: 0 0 0 3px rgba(81, 81, 206, 0.2);
+}
+
+input[type="date"] {
+    color: #5a6a7a;
+}
+
+button {
+    background-color: rgba(81, 81, 206, 0.85);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 12px rgba(81, 81, 206, 0.3);
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto 0;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+button:hover {
+    background-color: rgba(61, 61, 176, 0.9);
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .header img {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .menu {
+        margin-right: 0;
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    form {
+        padding: 20px;
+    }
+}
+.footerLogo img{
+    height: 50px;
+    width: 50px;
+}
+.footer{
+    padding: 30px 90px;
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+}
+.footer p{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    margin: auto;
+}

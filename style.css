@@ -1,0 +1,160 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    height: 130px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0;
+}
+
+.header img {
+    margin-left: 81px;
+    width: 150px;
+    height: 100px;
+    transform: scaleY(-1);
+    margin-top: 15px;
+    transition: transform 2s;
+}
+
+.header img:hover {
+    transform: scaleY(1);
+    transition: 2s;
+}
+
+.header img:not(:hover) {
+    transform: scaleY(-1);
+    transition: 2s;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 81px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: rgba(21, 21, 73, 0.521);
+}
+
+.footerLogo img{
+    height: 50px;
+    width: 50px;
+}
+.footer{
+    padding: 30px 90px;
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-top: 60px;
+
+}
+.footer p{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    margin: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #f8faff;
+    color: #1a1a2e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1e2b5c;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table thead {
+    background-color: rgba(81, 81, 206, 0.25);
+    border-bottom: 2px solid rgba(81, 81, 206, 0.5);
+}
+
+.schedule-table th {
+    padding: 20px 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1a1a3a;
+    text-align: left;
+}
+
+.schedule-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e7f0;
+    color: #2d3a4f;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: rgba(81, 81, 206, 0.05);
+    transition: 0.2s;
+}
+
+.day {
+    font-weight: 600;
+    color: #1e2b5c;
+}
+
+.time {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 600px) {
+    .schedule-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+}
